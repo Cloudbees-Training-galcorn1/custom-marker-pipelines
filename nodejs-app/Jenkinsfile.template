@@ -32,11 +32,11 @@ pipeline {
       }
       input {
         message "Should we deploy?"
-        submitter "guest"
+        submitter "galcorn1"
         submitterParameter "APPROVER"
       }
       steps {
-        echo "Continuing with deployment"
+        echo "Continuing with deployment - approved by ${APPROVER}"
       }
      }
     }
