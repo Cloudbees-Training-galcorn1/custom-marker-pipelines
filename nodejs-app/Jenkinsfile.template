@@ -28,11 +28,11 @@ pipeline {
         branch 'master'
       }
             options {
-        timeout(time: 60, unit: 'SECONDS') 
+        timeout(time: 10, unit: 'SECONDS') 
       }
       input {
         message "Should we deploy?"
-        submitter "beedemo-ops"
+        submitter "guest"
         submitterParameter "APPROVER"
       }
       steps {
